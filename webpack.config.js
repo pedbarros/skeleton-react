@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const isDevelopment = process.env.NODE_ENV === "development";
-console.log(process.env.NODE_ENV);
+
 module.exports = {
   mode: isDevelopment ? "development" : "production",
   devtool: isDevelopment ? "eval-source-map" : "source-map",
